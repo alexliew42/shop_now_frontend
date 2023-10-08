@@ -1,7 +1,6 @@
 import axios from 'axios'
 import {useState, useEffect} from "react"
 import {Route, Routes } from "react-router-dom";
-import {ProductsIndex} from './ProductsIndex.jsx'
 import {HomeCategory} from "./HomeCategory"
 
 export function Content () {
@@ -29,7 +28,7 @@ export function Content () {
     <div>
       <Routes>
           <Route path="/" element = {<HomeCategory products={products} onCategoryChange={handleIndexCategoryProducts} onIndex={handleIndexProducts}/>} />
-          <Route path="/products/electronics" element={<ProductsIndex products={products} />} />
+          {/* <Route path="/products/electronics" element={<ProductsIndex products={products} />} /> */}
       </Routes>
     </div>
   )

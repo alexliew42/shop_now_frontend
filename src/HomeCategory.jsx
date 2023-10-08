@@ -15,7 +15,7 @@ export function HomeCategory(props) {
     <div>
       <button onClick={() => handleIndex()}>All Products</button>
       <button onClick={() => handleClick('electronics', 1)}>Electronics</button>
-      <a href="/products/2">Clothing</a>
+      <button onClick={() => handleClick('clothing', 2)}>Clothing</button>
       {props.products.map((product) => (
         <div key={product.id}>
           <img src={product.image}/>  
