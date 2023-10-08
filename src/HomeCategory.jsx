@@ -3,7 +3,6 @@
 export function HomeCategory(props) {
 
   const handleClick = (category, category_id) => {
-    console.log(category, category_id)
     props.onCategoryChange(category, category_id)
   }
 
