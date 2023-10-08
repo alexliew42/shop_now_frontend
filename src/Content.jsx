@@ -4,8 +4,6 @@ import {Route, Routes } from "react-router-dom";
 import {ProductsIndex} from './ProductsIndex.jsx'
 import {HomeCategory} from "./HomeCategory"
 
-
-
 export function Content () {
   const [products, setProducts] = useState([])
 
@@ -15,14 +13,23 @@ export function Content () {
       setProducts(response.data)
     })
   }
+
+  const handleIndexCategoryProducts = (category, category_id) => {
+    console.log(category)
+    console.log(category_id)
+    axios.get(`http://localhost:3000/category_index.json?category_id=${category_id}`).then((response) => {
+      setProducts(response.data)
+    })
+  }
+
   useEffect(handleIndexProducts, [])
 
 
   return(
     <div>
       <Routes>
-          <Route path="/" element = {<HomeCategory products={products}/>} />
-          <Route path="/products" element={<ProductsIndex products={products} />} />
+          <Route path="/" element = {<HomeCategory products={products} onCategoryChange={handleIndexCategoryProducts} onIndex={handleIndexProducts}/>} />
+          <Route path="/products/electronics" element={<ProductsIndex products={products} />} />
       </Routes>
     </div>
   )
