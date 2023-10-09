@@ -2,10 +2,37 @@
   padding: 1.3rem;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 5px 20px #E5E5E5;
+  box-shadow: 0px 5px 2px #E5E5E5;
+  padding: 10px;
 }
 
 html,
 body {
   margin: 0;
+}
+
+.logo {
+  background: #CA4246;
+  background-color: #CA4246;
+  background: conic-gradient(#E16541 16.666%,
+      #E16541 50%,
+      #476098 50%,
+      #476098 100%);
+  background-size: 100%;
+  background-repeat: repeat;
+  font-family: Optima, sans-serif;
+  font-weight: 800;
+  font-size: 3em;
+  width: 5em;
+  line-height: 0.9em;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-background-clip: text;
+  -moz-text-fill-color: transparent;
+}
+
+.header-right {
+  background-image: url('./assets/icons8-cart-48.png');
+  width: 48px;
+  height: 44px;
 }

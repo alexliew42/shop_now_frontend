@@ -3,9 +3,8 @@ import './index.css'
 export function Header () {
   return (
       <div className="header">
-        <a>Logo</a>
+        <a className='logo'>ShopNow</a>
         <div className="header-right">
-          Cart
         </div>
       </div>
   )
