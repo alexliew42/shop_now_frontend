@@ -12,6 +12,7 @@ export function Header () {
         <div className="middle-header">
           <a href="/">Home</a>
           <a href="/">Products</a>
+          <a href="/">About</a>
         </div>
         <button onClick={handleClick} className="header-right">
         </button>

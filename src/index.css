@@ -38,6 +38,7 @@ body {
   border: none;
   background-color: transparent;
   padding: 5px;
+  cursor: pointer;
 }
 
 .header-right:hover {
@@ -47,4 +48,14 @@ body {
 
 .middle-header {
   margin: auto;
+}
+
+.middle-header a {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  color: black;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 300;
 }
