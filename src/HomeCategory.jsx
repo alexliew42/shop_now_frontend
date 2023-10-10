@@ -23,6 +23,7 @@ export function HomeCategory(props) {
           <div>{product.name}</div>
           <div>{product.price}</div>
           <div>{product.description}</div>
+          <button>Purchase</button>
         </div>
       ))}
     </div>
