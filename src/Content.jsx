@@ -3,6 +3,8 @@ import {useState, useEffect} from "react"
 import {Route, Routes } from "react-router-dom";
 import {HomeCategory} from "./HomeCategory"
 import {CartedProductsIndex} from "./CartedProductsIndex"
+import {Login} from "./Login.jsx"
+import {Logout} from "./Logout.jsx"
 
 export function Content () {
   const [products, setProducts] = useState([])
@@ -30,6 +32,8 @@ export function Content () {
       <Routes>
           <Route path="/" element = {<HomeCategory products={products} onCategoryChange={handleIndexCategoryProducts} onIndex={handleIndexProducts}/>} />
           <Route path="/cart" element = {<CartedProductsIndex/>}/>
+          <Route path="/login" element = {<Login/>} />
+          <Route path="/logout" element= {<Logout/>} />
       </Routes>
     </div>
   )

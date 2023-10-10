@@ -19,6 +19,8 @@ export function Header () {
           <a href="/">Products</a>
           <a href="/">About</a>
         </div>
+        <a href="/login">Login</a>
+        <a href="/logout">Logout</a>
         <button onClick={handleClick} className="header-right">
         </button>
       </div>
