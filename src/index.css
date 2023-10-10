@@ -35,4 +35,10 @@ body {
   background-image: url('./assets/icons8-cart-48.png');
   width: 48px;
   height: 44px;
+  border: none;
+  background-color: transparent;
+}
+
+.header-right:hover {
+  background-color: #E5E5E5;
 }
