@@ -9,6 +9,10 @@ export function Header () {
   return (
       <div className="header">
         <a className='logo'>ShopNow</a>
+        <div className="middle-header">
+          <a href="/">Home</a>
+          <a href="/">Products</a>
+        </div>
         <button onClick={handleClick} className="header-right">
         </button>
       </div>
