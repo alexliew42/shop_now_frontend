@@ -28,7 +28,6 @@ export function Content () {
     <div>
       <Routes>
           <Route path="/" element = {<HomeCategory products={products} onCategoryChange={handleIndexCategoryProducts} onIndex={handleIndexProducts}/>} />
-          {/* <Route path="/products/electronics" element={<ProductsIndex products={products} />} /> */}
       </Routes>
     </div>
   )

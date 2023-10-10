@@ -12,9 +12,11 @@ export function HomeCategory(props) {
 
   return(
     <div>
-      <button onClick={() => handleIndex()}>All Products</button>
-      <button onClick={() => handleClick('electronics', 1)}>Electronics</button>
-      <button onClick={() => handleClick('clothing', 2)}>Clothing</button>
+      <div className="home-category__buttons">
+        <button onClick={() => handleIndex()}>All Products</button>
+        <button onClick={() => handleClick('electronics', 1)}>Electronics</button>
+        <button onClick={() => handleClick('clothing', 2)}>Clothing</button>
+      </div>
       {props.products.map((product) => (
         <div key={product.id}>
           <img src={product.image}/>  
